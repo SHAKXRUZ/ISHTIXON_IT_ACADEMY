@@ -1,0 +1,18 @@
+.tun {
+    background-color: black;
+    color: white;
+}
+
+.kun {
+    background-color: white;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 10px;
+}

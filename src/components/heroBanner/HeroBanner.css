@@ -1,0 +1,28 @@
+.hero {
+    width: 100%;
+    padding: 0px 20px;
+
+}
+
+.heroBanner_container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero_content {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heroBanner_title{
+    max-width: 700px;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.heroBanner_text{
+    font-size: 18px;
+    max-width: 549px;
+    line-height: 25px;
+}
