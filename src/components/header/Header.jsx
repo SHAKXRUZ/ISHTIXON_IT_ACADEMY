@@ -1,11 +1,12 @@
+import "./Header.css";
+import { Link } from "react-router-dom";
 import { HiOutlineSun } from "react-icons/hi";
 import { BsMoon } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import "./Header.css";
+import { AiOutlineMenu } from "react-icons/ai";
 import logo_white from "../../assets/images/Logo_white.svg";
 import logo_black from "../../assets/images/Logo_black.svg";
 
-const Header = ({ toggle, setToggle }) => {
+const Header = ({ toggle, setToggle, setSidebar }) => {
   return (
     <div>
       <header>
@@ -71,14 +72,16 @@ const Header = ({ toggle, setToggle }) => {
                 </Link>
               </div>
               <div className="header_contact_content">
-
-
                 <button className="toggle_btn">
-                  <HiOutlineSun className={toggle ? "toggle_sun" : "toggle_sun sun"} onClick={() => setToggle(false)} />
-                  <BsMoon className={toggle ? "toggle_moon moon" : "toggle_moon"} onClick={() => setToggle(true)} />
+                  <HiOutlineSun
+                    className={toggle ? "toggle_sun" : "toggle_sun sun"}
+                    onClick={() => setToggle(false)}
+                  />
+                  <BsMoon
+                    className={toggle ? "toggle_moon moon" : "toggle_moon"}
+                    onClick={() => setToggle(true)}
+                  />
                 </button>
-
-
 
                 <div className="header_contact">
                   <p>
@@ -95,7 +98,9 @@ const Header = ({ toggle, setToggle }) => {
                     <a
                       href="mailto:chotatam@gmail.com"
                       className={
-                        toggle ? "header_phone tun" : "header_phone kun"
+                        toggle
+                          ? "header_phone email tun"
+                          : "header_phone email kun"
                       }
                     >
                       chotatam@gmail.com
@@ -106,6 +111,11 @@ const Header = ({ toggle, setToggle }) => {
                   Заказать звонок
                 </Link>
               </div>
+
+              <AiOutlineMenu
+                className="header_sidebar"
+                onClick={() => setSidebar(true)}
+              />
             </div>
           </div>
         </div>

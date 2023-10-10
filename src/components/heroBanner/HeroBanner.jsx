@@ -17,7 +17,7 @@ const HeroBanner = () => {
             </p>
           </div>
           <div className="heroBanner_right_content">
-            <img src={hero_images} alt="" />
+            <img className="hero_images" src={hero_images} alt="" />
           </div>
         </div>
       </div>

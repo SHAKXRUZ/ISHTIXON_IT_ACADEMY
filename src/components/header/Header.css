@@ -68,8 +68,6 @@
     border-radius: 50%;
 }
 
-
-
 .header_phone {
     text-decoration: none;
     color: white;
@@ -106,4 +104,88 @@
 .kun {
     background-color: white;
     color: black;
+}
+
+.header_sidebar {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px) {
+    .header_content {
+        padding: 10px 30px;
+    }
+
+    .header_link_content {
+        gap: 15px;
+    }
+
+    .header_contact_content {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .header_registr_btn {
+        width: 160px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .header_content {
+        padding: 10px 0px;
+    }
+
+    .header_link_content {
+        gap: 10px;
+    }
+
+    .header_contact_content {
+        gap: 20px;
+    }
+
+    .toggle_btn {
+        width: 80px;
+    }
+
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .header_link_content,
+    .header_registr_btn {
+        display: none;
+    }
+
+    .header_sidebar {
+        display: block;
+    }
+
+    .header_contact_content {
+        gap: 100px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .toggle_btn,
+    .email {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .header {
+        padding: 0px 10px;
+    }
+
+    .header_content {
+        padding: 5px 0px;
+    }
 }

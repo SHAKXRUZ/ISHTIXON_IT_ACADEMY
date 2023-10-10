@@ -15,14 +15,101 @@
     align-items: center;
     justify-content: space-between;
 }
-.heroBanner_title{
+
+.heroBanner_title {
     max-width: 700px;
     font-size: 48px;
     margin-bottom: 50px;
 }
 
-.heroBanner_text{
+.heroBanner_text {
     font-size: 18px;
     max-width: 549px;
     line-height: 25px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .hero_content {
+        padding: 50px 30px;
+    }
+
+    .heroBanner_title {
+        font-size: 40px;
+    }
+
+    .hero_images {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .hero_content {
+        padding: 50px 0px;
+    }
+
+    .heroBanner_title {
+        font-size: 34px;
+    }
+
+    .hero_images {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+    .hero_content {
+        padding: 150px 0px;
+        text-align: center;
+    }
+
+    .heroBanner_title {
+        max-width: 100%;
+        font-size: 40px;
+    }
+
+    .heroBanner_text {
+        max-width: 100%;
+    }
+
+    .hero_images {
+        display: none;
+        width: 350px;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .hero_content {
+        padding: 100px 0px;
+    }
+
+    .heroBanner_title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .heroBanner_text {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .hero_content {
+        padding: 50px 0px;
+    }
+
+    .heroBanner_title {
+        font-size: 22px;
+    }
+
+    .heroBanner_text {
+        font-size: 14px;
+    }
 }
