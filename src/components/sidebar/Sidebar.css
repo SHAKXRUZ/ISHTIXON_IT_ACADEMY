@@ -24,3 +24,9 @@
     color: white;
     background-color: black;
 }
+
+@media only screen and (min-width:601px) {
+    .sidebar {
+        left: -80%;
+    }
+}

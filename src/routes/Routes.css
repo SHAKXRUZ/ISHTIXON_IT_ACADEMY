@@ -1,6 +1,7 @@
 .tun {
-    background-color: black;
+    /* background: linear-gradient(90deg, rgba(124, 67, 87, 1) 0%, rgba(65, 4, 47, 1) 100%); */
     color: white;
+    background-color: black;
 }
 
 .kun {

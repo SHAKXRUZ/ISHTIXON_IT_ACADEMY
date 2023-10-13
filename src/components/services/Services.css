@@ -1,0 +1,147 @@
+.services {
+    width: 100%;
+    padding: 0px 20px;
+    margin: 50px 0px;
+}
+
+.services_container {
+    max-width: 1358px;
+    margin: 0 auto;
+}
+
+.services_content {
+    border: 1px solid #4E4E4E;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.services_title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 50px;
+}
+
+.services_content_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.services_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.services_images {
+    width: 69px;
+    height: 69px;
+    margin-bottom: 10px;
+}
+
+.services_box_title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.7503158450126648px;
+}
+
+.services_box_text {
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.5002105832099915px;
+}
+
+
+@media only screen and (max-width:950px) {
+    .services_content_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .services_content {
+        padding: 20px;
+    }
+
+    .services_title {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .services_images {
+        margin-bottom: 5px;
+    }
+
+    .services_box_title {
+        margin-bottom: 5px;
+    }
+
+    .services_box_text {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .services_content_box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .services_content {
+        padding: 30px;
+    }
+
+    .services_title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .services_box_title {
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+
+    .services_box_text {
+        max-width: 250px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .services_content_box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .services_content {
+        padding: 20px 10px;
+    }
+
+    .services_title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .services_box_title {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .services_box_text {
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

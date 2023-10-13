@@ -15,177 +15,143 @@
     padding: 15px 50px;
 }
 
-.header_link_content {
+.header_logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.header_link_group {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .header_link_text {
-    text-decoration: none;
-}
-
-.header_contact_content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.toggle_btn {
-    width: 83px;
-    height: 40px;
-    border-radius: 40px;
-    border: 1px solid #AAAAAA;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px;
-}
-
-.toggle_sun {
-    width: 35px;
-    height: 35px;
+    list-style: none;
     cursor: pointer;
-    color: #AAAAAA;
-}
-
-.sun {
-    background-color: #5454D4;
-    color: white;
-    border-radius: 50%;
-}
-
-.toggle_moon {
-    width: 33px;
-    height: 33px;
-    cursor: pointer;
-    color: #AAAAAA;
-}
-
-.moon {
-    background-color: #5454D4;
-    color: white;
-    border-radius: 50%;
-}
-
-.header_phone {
+    transition: .5s;
     text-decoration: none;
     color: white;
 }
 
-
-.header_registr_btn {
-    width: 168px;
-    height: 45px;
-    background-color: #6911AD;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 7px;
-    font-size: 16px;
-    border: 1px solid transparent;
+.header_link_text:hover,
+.header_contact_text:hover {
+    color: dodgerblue;
     transition: .5s;
 }
 
-.header_registr_btn:hover {
-    color: white;
-    background-color: black;
-    border-color: white;
-    transition: .5s;
-}
-
-.tun {
-    background-color: #17191D;
-    color: white;
-}
-
-.kun {
-    background-color: white;
+.header_link_white {
     color: black;
 }
 
-.header_sidebar {
-    display: none;
-    font-size: 25px;
-    cursor: pointer;
+.header_contact_group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-@media only screen and (max-width:1200px) {
-    .header_content {
-        padding: 10px 30px;
-    }
+.header_toggle_btn {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #aaaaaa;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2px;
+}
 
-    .header_link_content {
-        gap: 15px;
-    }
+.header_toggle_sun {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
-    .header_contact_content {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-    }
+.header_toggle_moon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
-    .header_registr_btn {
-        width: 160px;
-        height: 40px;
-    }
+.sun {
+    background-color: #6911AD;
+    color: white;
+}
+
+.moon {
+    background-color: #6911AD;
+    color: white;
+}
+
+.header_contact_text {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.header_contact_black {
+    color: black;
+}
+
+.header_signup_btn {
+    width: 168px;
+    height: 45px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #6911AD;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.header_signup_btn:hover {
+    transition: .5s;
+    background-color: dodgerblue;
+}
+
+.header_menu_icons {
+    font-size: 25px;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+
+.header_menu_icons:hover {
+    color: dodgerblue;
+    transition: .5s;
 }
 
 @media only screen and (max-width:1000px) {
     .header_content {
         padding: 10px 0px;
     }
-
-    .header_link_content {
-        gap: 10px;
-    }
-
-    .header_contact_content {
-        gap: 20px;
-    }
-
-    .toggle_btn {
-        width: 80px;
-    }
-
 }
-
 
 @media only screen and (max-width:900px) {
 
-    .header_link_content,
-    .header_registr_btn {
+    .header_contact_content,
+    .header_toggle_btn {
         display: none;
     }
 
-    .header_sidebar {
-        display: block;
+    .header_signup_btn {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
     }
-
-    .header_contact_content {
-        gap: 100px;
-    }
-
 }
 
 @media only screen and (max-width:600px) {
 
-    .toggle_btn,
-    .email {
+    .header_link_group,
+    .header_signup_btn {
         display: none;
     }
 
-}
-
-@media only screen and (max-width:400px) {
-
-    .header {
-        padding: 0px 10px;
-    }
-
-    .header_content {
-        padding: 5px 0px;
+    .header_menu_icons {
+        display: block;
     }
 }

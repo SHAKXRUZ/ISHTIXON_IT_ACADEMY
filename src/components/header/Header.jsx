@@ -1,5 +1,4 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
 import { HiOutlineSun } from "react-icons/hi";
 import { BsMoon } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -9,114 +8,115 @@ import logo_black from "../../assets/images/Logo_black.svg";
 const Header = ({ toggle, setToggle, setSidebar }) => {
   return (
     <div>
-      <header>
-        <div className="header">
-          <div className="header_container">
-            <div className="header_content">
-              <div className="header_logo_content">
-                <Link to="/">
-                  <img
-                    className="header_logo_content_images"
-                    src={toggle ? logo_white : logo_black}
-                    alt="logo"
-                  />
-                </Link>
+      <header className="header">
+        <div className="header_container">
+          <div className="header_content">
+            <img
+              src={toggle ? logo_white : logo_black}
+              alt="logo"
+              className="header_logo"
+            />
+            <ul className="header_link_group">
+              <li className="header_link_text">
+                <a
+                  className={
+                    toggle
+                      ? "header_link_text"
+                      : "header_link_text header_link_white"
+                  }
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li className="header_link_text">
+                <a
+                  className={
+                    toggle
+                      ? "header_link_text"
+                      : "header_link_text header_link_white"
+                  }
+                  href="#portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li className="header_link_text">
+                <a
+                  className={
+                    toggle
+                      ? "header_link_text"
+                      : "header_link_text header_link_white"
+                  }
+                  href="#services"
+                >
+                  Services
+                </a>
+              </li>
+              <li className="header_link_text">
+                <a
+                  className={
+                    toggle
+                      ? "header_link_text"
+                      : "header_link_text header_link_white"
+                  }
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            <div className="header_contact_group">
+              <div className="header_toggle_btn">
+                <HiOutlineSun
+                  className={
+                    toggle ? "header_toggle_sun" : "header_toggle_sun sun"
+                  }
+                  onClick={() => setToggle(false)}
+                />
+                <BsMoon
+                  className={
+                    toggle ? "header_toggle_moon moon" : "header_toggle_moon"
+                  }
+                  onClick={() => setToggle(true)}
+                />
               </div>
-              <div className="header_link_content">
-                <Link className="header_link_text" to="/">
-                  <p
-                    className={
-                      toggle
-                        ? "header_link_content_text tun"
-                        : "header_link_content_text kun"
-                    }
-                  >
-                    O компании
-                  </p>
-                </Link>
 
-                <Link className="header_link_text" to="/">
-                  <p
-                    className={
-                      toggle
-                        ? "header_link_content_text tun"
-                        : "header_link_content_text kun"
-                    }
-                  >
-                    Портфолио
-                  </p>
-                </Link>
-
-                <Link className="header_link_text" to="/">
-                  <p
-                    className={
-                      toggle
-                        ? "header_link_content_text tun"
-                        : "header_link_content_text kun"
-                    }
-                  >
-                    Услуги
-                  </p>
-                </Link>
-
-                <Link className="header_link_text" to="/">
-                  <p
-                    className={
-                      toggle
-                        ? "header_link_content_text tun"
-                        : "header_link_content_text kun"
-                    }
-                  >
-                    Контакты
-                  </p>
-                </Link>
-              </div>
               <div className="header_contact_content">
-                <button className="toggle_btn">
-                  <HiOutlineSun
-                    className={toggle ? "toggle_sun" : "toggle_sun sun"}
-                    onClick={() => setToggle(false)}
-                  />
-                  <BsMoon
-                    className={toggle ? "toggle_moon moon" : "toggle_moon"}
-                    onClick={() => setToggle(true)}
-                  />
-                </button>
-
-                <div className="header_contact">
-                  <p>
-                    <a
-                      href="tel:+998907777777"
-                      className={
-                        toggle ? "header_phone tun" : "header_phone kun"
-                      }
-                    >
-                      +998 90 777-77-77
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="mailto:chotatam@gmail.com"
-                      className={
-                        toggle
-                          ? "header_phone email tun"
-                          : "header_phone email kun"
-                      }
-                    >
-                      chotatam@gmail.com
-                    </a>
-                  </p>
-                </div>
-                <Link className="header_registr_btn" to="/">
-                  Заказать звонок
-                </Link>
+                <p>
+                  <a
+                    className={
+                      toggle
+                        ? "header_contact_text"
+                        : "header_contact_text header_contact_black"
+                    }
+                    href="tel:+998933469498"
+                  >
+                    +998 93 346-94-98
+                  </a>
+                </p>
+                <p>
+                  <a
+                    className={
+                      toggle
+                        ? "header_contact_text"
+                        : "header_contact_text header_contact_black"
+                    }
+                    href="mailto:otabek@gmail.com"
+                  >
+                    otabek@gmail.com
+                  </a>
+                </p>
               </div>
-
-              <AiOutlineMenu
-                className="header_sidebar"
-                onClick={() => setSidebar(true)}
-              />
+              <a href="#registr">
+                <button className="header_signup_btn">Ro'yxatdan o'tish</button>
+              </a>
             </div>
+            <AiOutlineMenu
+              className="header_menu_icons"
+              onClick={() => setSidebar(true)}
+            />
           </div>
         </div>
       </header>

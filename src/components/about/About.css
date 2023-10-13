@@ -1,0 +1,153 @@
+.about {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.about_container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.about_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.about_content_title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+.about_content_text {
+    max-width: 569px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.about_content_text:last-child {
+    margin-top: 20px;
+}
+
+.about_right_card_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about_right_card_div:last-child {
+    margin-top: 50px;
+}
+
+.about_right_card {
+    text-align: center;
+}
+
+.about_right_card_title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_right_card_text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .about_content {
+        padding: 0px 50px;
+    }
+
+    .about_content_title {
+        font-size: 40px;
+    }
+
+    .about_right_card_div {
+        gap: 30px;
+    }
+
+    .about_right_card_div:last-child {
+        margin-top: 30px;
+    }
+
+    .about_right_card_title {
+        font-size: 40px;
+    }
+
+    .about_right_card_text {
+        font-size: 18px;
+    }
+
+    .about_content_text {
+        max-width: 500px;
+    }
+}
+
+
+@media only screen and (max-width:1000px) {
+
+    .about_content {
+        padding: 0px 0px;
+    }
+
+    .about_content_right {
+        display: none;
+    }
+
+    .about_content_title {
+        font-size: 34px;
+    }
+
+
+    .about_content_text {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .about_content_title {
+        font-size: 28px;
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
+
+    .about_content_text {
+        font-size: 16px;
+    }
+
+    .about_content_text:last-child {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .about_content_title {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .about_content_text {
+        font-size: 14px;
+    }
+
+    .about_content_text:last-child {
+        margin-top: 5px;
+    }
+
+}

@@ -7,3 +7,9 @@
     top: 0;
     left: 0;
 }
+
+@media only screen and (min-width:601px) {
+    .overlay {
+        display: none;
+    }
+}
