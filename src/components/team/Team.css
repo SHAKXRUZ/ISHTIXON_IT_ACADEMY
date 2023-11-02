@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .team_box_images {
@@ -44,11 +45,17 @@
     border: 1px solid #4E4E4E;
     margin-top: -50px;
     background-color: #000000bb;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    position: absolute;
+    bottom: -30px;
+}
+
+.team_content_box:hover .team_box_text_group {
+    display: flex;
 }
 
 .team_person_name {
@@ -66,6 +73,14 @@
     width: 100px;
     height: 2px;
     background-color: #999999;
+}
+
+
+.box {
+
+    background-color: white;
+    border-radius: 60px;
+    border: 1px solid transparent;
 }
 
 @media only screen and (max-width:1400px) {
@@ -112,6 +127,11 @@
         height: 70px;
         gap: 2px;
     }
+
+    .team_content {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
 }
 
 @media only screen and (max-width:680px) {
@@ -127,7 +147,7 @@
 
     .team_content {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 50px;
     }
 
 
@@ -169,7 +189,7 @@
     }
 
     .team_content {
-        gap: 20px;
+        gap: 50px;
     }
 
 
@@ -180,7 +200,7 @@
 
     .team_box_text_group {
         width: 100%;
-        height: 100%;
+        height: 70px;
         padding: 5px;
     }
 

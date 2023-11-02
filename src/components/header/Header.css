@@ -16,7 +16,7 @@
 }
 
 .header_logo {
-    width: 70px;
+    width: 90px;
     cursor: pointer;
 }
 
@@ -124,6 +124,12 @@
     transition: .5s;
 }
 
+@media only screen and (max-width:1200px) {
+    .header_contact_content {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:1000px) {
     .header_content {
         padding: 10px 0px;
@@ -144,10 +150,10 @@
     }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
 
-    .header_link_group,
-    .header_signup_btn {
+    .header_signup_btn,
+    .header_link_group {
         display: none;
     }
 

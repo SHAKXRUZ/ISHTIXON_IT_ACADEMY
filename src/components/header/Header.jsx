@@ -2,8 +2,7 @@ import "./Header.css";
 import { HiOutlineSun } from "react-icons/hi";
 import { BsMoon } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
-import logo_white from "../../assets/images/Logo_white.svg";
-import logo_black from "../../assets/images/Logo_black.svg";
+import logo from "../../assets/images/logo.png";
 
 const Header = ({ toggle, setToggle, setSidebar }) => {
   return (
@@ -11,11 +10,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
       <header className="header">
         <div className="header_container">
           <div className="header_content">
-            <img
-              src={toggle ? logo_white : logo_black}
-              alt="logo"
-              className="header_logo"
-            />
+            <img src={logo} alt="logo" className="header_logo" />
             <ul className="header_link_group">
               <li className="header_link_text">
                 <a
@@ -26,7 +21,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
                   }
                   href="#about"
                 >
-                  About
+                  Biz haqimizda
                 </a>
               </li>
               <li className="header_link_text">
@@ -38,7 +33,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
                   }
                   href="#portfolio"
                 >
-                  Portfolio
+                   Loyhalarimiz
                 </a>
               </li>
               <li className="header_link_text">
@@ -50,7 +45,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
                   }
                   href="#services"
                 >
-                  Services
+                  Bizning Kurslar
                 </a>
               </li>
               <li className="header_link_text">
@@ -62,7 +57,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
                   }
                   href="#contact"
                 >
-                  Contact
+                  Kontakt
                 </a>
               </li>
             </ul>
@@ -105,7 +100,7 @@ const Header = ({ toggle, setToggle, setSidebar }) => {
                     }
                     href="mailto:otabek@gmail.com"
                   >
-                    otabek@gmail.com
+                    otabektatusf@gmail.com
                   </a>
                 </p>
               </div>

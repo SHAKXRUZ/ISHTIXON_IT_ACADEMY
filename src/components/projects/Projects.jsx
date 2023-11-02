@@ -1,6 +1,7 @@
 import "./Projects.css";
 import projects_images1 from "../../assets/images/projects_images1.png";
 import projects_images2 from "../../assets/images/projects_images2.png";
+import projects_images3 from "../../assets/images/projects_images3.png";
 
 import { GoArrowUpRight } from "react-icons/go";
 const Projects = () => {
@@ -39,52 +40,13 @@ const Projects = () => {
           <div className="projects_content_box">
             <img
               className="projects_images"
-              src={projects_images1}
+              src={projects_images3}
               alt="projects_images"
             />
-            <a href="https://saspik.vercel.app">
+            <a href="https://yainvestor.uz">
               <div className="projects_images_hover">
                 <GoArrowUpRight className="projects_images_icons" />
-                <p className="projects_name">SASPIK clone</p>
-              </div>
-            </a>
-          </div>
-          <div className="projects_content_box">
-            <img
-              className="projects_images"
-              src={projects_images1}
-              alt="projects_images"
-            />
-            <a href="https://www.texnomart-shop.uz">
-              <div className="projects_images_hover">
-                <GoArrowUpRight className="projects_images_icons" />
-                <p className="projects_name">TEXNOMART clone</p>
-              </div>
-            </a>
-          </div>{" "}
-          <div className="projects_content_box">
-            <img
-              className="projects_images"
-              src={projects_images1}
-              alt="projects_images"
-            />
-            <a href="https://www.texnomart-shop.uz">
-              <div className="projects_images_hover">
-                <GoArrowUpRight className="projects_images_icons" />
-                <p className="projects_name">TEXNOMART clone</p>
-              </div>
-            </a>
-          </div>{" "}
-          <div className="projects_content_box">
-            <img
-              className="projects_images"
-              src={projects_images1}
-              alt="projects_images"
-            />
-            <a href="https://www.texnomart-shop.uz">
-              <div className="projects_images_hover">
-                <GoArrowUpRight className="projects_images_icons" />
-                <p className="projects_name">TEXNOMART clone</p>
+                <p className="projects_name">YAINVESTOR veb sayt</p>
               </div>
             </a>
           </div>

@@ -3,19 +3,14 @@ import { SlLocationPin } from "react-icons/sl";
 import { BsTelephone } from "react-icons/bs";
 import { PiTelegramLogoBold } from "react-icons/pi";
 import { FiYoutube, FiInstagram } from "react-icons/fi";
-import logo_white from "../../assets/images/Logo_white.svg";
-import logo_black from "../../assets/images/Logo_black.svg";
+import logo from "../../assets/images/logo.png";
 import "./Footer.css";
 const Footer = ({ toggle }) => {
   return (
     <div id="contact" className="footer">
       <footer className="footer_container">
         <div className="footer_content">
-          <img
-            className="header_logo_content_images"
-            src={toggle ? logo_white : logo_black}
-            alt="logo"
-          />
+          <img className="header_logo_content_images" src={logo} alt="logo" />
 
           <div className="footer_location">
             <a

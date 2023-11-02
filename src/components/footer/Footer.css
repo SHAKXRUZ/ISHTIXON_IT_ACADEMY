@@ -62,6 +62,11 @@
     color: black;
 }
 
+.header_logo_content_images {
+    width: 100px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:1000px) {
 
     .footer_content {

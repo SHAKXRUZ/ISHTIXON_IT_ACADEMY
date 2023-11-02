@@ -1,23 +1,42 @@
 // import React, { useState } from 'react';
 import "./Registr.css";
 const Registr = () => {
-  const userRegistr = async (e) => {
+  const sendTeligram = async (e) => {
     e.preventDefault();
-
-    const { ism, email, tel } = e.target;
-
-    await fetch("https://thoughtful-scrubs-boa.cyclic.app/registr", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        username: ism.value,
-        email: email.value,
-        telifon: tel.value,
-      }),
-    })
+    let { ism, email, tel } = e.target;
+    let chat_id = 792010044;
+    let message =
+      "Ismi: " +
+      ism.value +
+      "\nEmail: " +
+      email.value +
+      "\nTel: +998" +
+      tel.value;
+    console.log(message);
+    await fetch(
+      "https://api.telegram.org/bot6717549964:AAHm1LcGwDSqTfZvMkWjwsKEMKYwj5P_sh0/sendMessage",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "cache-control": "no-cache",
+        },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text: message,
+        }),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
-        alert(data.msg);
+        if (data) {
+          alert("Siz muvofiqiyatli ro'yxatdan o'tdingiz!");
+          ism.value = "";
+          email.value = "";
+          tel.value = "";
+        } else {
+          alert("Server xatolik!");
+        }
       });
   };
 
@@ -25,7 +44,7 @@ const Registr = () => {
     <div id="registr" className="registr">
       <div className="registr_container">
         <div className="registr_content">
-          <form onSubmit={(e) => userRegistr(e)} className="registr_form">
+          <form onSubmit={(e) => sendTeligram(e)} className="registr_form">
             <input
               className="registr_input"
               type="text"
@@ -49,7 +68,7 @@ const Registr = () => {
               type="tel"
               placeholder="Telefon raqamangiz"
               required
-              maxLength={13}
+              maxLength={9}
               minLength={9}
               name="tel"
             />

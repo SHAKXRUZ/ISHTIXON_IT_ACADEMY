@@ -12,28 +12,29 @@ const Services = () => {
     <div id="services" className="services">
       <div className="services_container">
         <div className="services_content">
-          <h2 className="services_title">Bizning xizmatlar</h2>
+          <h2 className="services_title">Bizning kurslar</h2>
           <div className="services_content_box">
+          <div className="services_box">
+              <img
+                className="services_images"
+                src={services_images2}
+                alt="images"
+              />
+              <p className="services_box_title">Kompyuter savodxonligi</p>
+              <p className="services_box_text">
+                Kompyuterni endi boshlayotganlar uchun.<br/>
+                Kursimiz davomiyligi 6 oy.
+              </p>
+            </div>
             <div className="services_box">
               <img
                 className="services_images"
                 src={services_images1}
                 alt="images"
               />
-              <p className="services_box_title">Veb saytlar</p>
+              <p className="services_box_title">Frontend dasturlash</p>
               <p className="services_box_text">
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
-              </p>
-            </div>
-            <div className="services_box">
-              <img
-                className="services_images"
-                src={services_images2}
-                alt="images"
-              />
-              <p className="services_box_title">UI/UX Dizayn</p>
-              <p className="services_box_text">
-                Biz UI/UX dizayn xizmatlarini taqdim etamiz
+                Kursimiz davomiyligi 6 oy.
               </p>
             </div>
             <div className="services_box">
@@ -42,9 +43,9 @@ const Services = () => {
                 src={services_images3}
                 alt="images"
               />
-              <p className="services_box_title">Mobil ilovalar</p>
+              <p className="services_box_title">Backend dasturlash</p>
               <p className="services_box_text">
-                Biz eng yaxshi dizaynerlar xizmatlarini taqdim etamiz
+              Kursimiz davomiyligi 6 oy.
               </p>
             </div>
             <div className="services_box">
@@ -55,7 +56,8 @@ const Services = () => {
               />
               <p className="services_box_title">SMM</p>
               <p className="services_box_text">
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                Beznesingizni rivojlantirish uchun 1-qadam<br/>
+                Kursimiz davomiyligi 2 oy.
               </p>
             </div>
             <div className="services_box">
@@ -66,7 +68,8 @@ const Services = () => {
               />
               <p className="services_box_title">Grafik dizayn</p>
               <p className="services_box_text">
-                Biz fotografiya xizmatlarini taqdim etamiz
+                Biz fotografiya xizmatlarini taqdim etamiz <br/>
+                Kursimiz davomiyligi 4 oy.
               </p>
             </div>
             <div className="services_box">
@@ -77,7 +80,7 @@ const Services = () => {
               />
               <p className="services_box_title">Motion dizayn</p>
               <p className="services_box_text">
-                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.
+                Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.<br/> Kursimiz davomiyligi 6 oy..
               </p>
             </div>
           </div>

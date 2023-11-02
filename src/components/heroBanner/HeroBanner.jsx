@@ -8,12 +8,12 @@ const HeroBanner = () => {
         <div className="hero_content">
           <div className="heroBanner_left_content">
             <h1 className="heroBanner_title">
-              Biz veb-saytlar, ilovalarni ishlab chiqamiz
+              Biz bilan kelajak kasblarini egallang.
             </h1>
             <p className="heroBanner_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              Siz doimo olg'a intilishda bo'lishingiz uchun qulay o'quv muhitini
+              yaratdik. O'rganing, mashq qiling va bilimlarni darhol ishingizda
+              qo'llang.
             </p>
           </div>
           <div className="heroBanner_right_content">

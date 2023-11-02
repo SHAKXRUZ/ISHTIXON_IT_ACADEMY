@@ -27,7 +27,11 @@
     max-width: 549px;
     line-height: 25px;
 }
-
+.hero_images{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
 @media only screen and (max-width:1200px) {
 
     .hero_content {

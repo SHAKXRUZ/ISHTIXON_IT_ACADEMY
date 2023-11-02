@@ -13,7 +13,7 @@ const Team = ({ toggle }) => {
         <div className="team_content">
           <div className="team_content_box">
             <img
-              className="team_box_images"
+              className={toggle ? "team_box_images" : "team_box_images box"}
               src={team_images1}
               alt="person_images"
             />
@@ -29,27 +29,10 @@ const Team = ({ toggle }) => {
               <p className="team_person_work">IT Academy asoschisi</p>
             </div>
           </div>
+
           <div className="team_content_box">
             <img
-              className="team_box_images"
-              src={team_images2}
-              alt="person_images"
-            />
-            <div
-              className={
-                toggle
-                  ? "team_box_text_group"
-                  : "team_box_text_group team_white"
-              }
-            >
-              <p className="team_person_name">Akmal Xudoyberdiyev</p>
-              <p className="team_person_line"></p>
-              <p className="team_person_work">SMM designer</p>
-            </div>
-          </div>
-          <div className="team_content_box">
-            <img
-              className="team_box_images"
+              className={toggle ? "team_box_images" : "team_box_images box"}
               src={team_images3}
               alt="person_images"
             />
@@ -67,7 +50,7 @@ const Team = ({ toggle }) => {
           </div>
           <div className="team_content_box">
             <img
-              className="team_box_images"
+              className={toggle ? "team_box_images" : "team_box_images box"}
               src={team_images4}
               alt="person_images"
             />
@@ -81,6 +64,24 @@ const Team = ({ toggle }) => {
               <p className="team_person_name">Shakhruz Ismoilov</p>
               <p className="team_person_line"></p>
               <p className="team_person_work">Fullstack dasturchi</p>
+            </div>
+          </div>
+          <div className="team_content_box">
+            <img
+              className={toggle ? "team_box_images" : "team_box_images box"}
+              src={team_images2}
+              alt="person_images"
+            />
+            <div
+              className={
+                toggle
+                  ? "team_box_text_group"
+                  : "team_box_text_group team_white"
+              }
+            >
+              <p className="team_person_name">Akmal Xudoyberdiyev</p>
+              <p className="team_person_line"></p>
+              <p className="team_person_work">SMM designer</p>
             </div>
           </div>
         </div>

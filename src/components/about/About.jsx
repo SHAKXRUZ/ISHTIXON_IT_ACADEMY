@@ -26,22 +26,22 @@ const About = () => {
           <div className="about_content_right">
             <div className="about_right_card_div">
               <div className="about_right_card">
-                <h2 className="about_right_card_title">20+</h2>
+                <h2 className="about_right_card_title">2+</h2>
                 <p className="about_right_card_text">Проектов запустил</p>
               </div>
               <div className="about_right_card">
-                <h2 className="about_right_card_title">4 года</h2>
+                <h2 className="about_right_card_title">2 года</h2>
                 <p className="about_right_card_text">Опыта разработки</p>
               </div>
             </div>
             <div className="about_right_card_div">
               <div className="about_right_card">
-                <h2 className="about_right_card_title">12+</h2>
+                <h2 className="about_right_card_title">2+</h2>
                 <p className="about_right_card_text">Профессионалов</p>
               </div>
 
               <div className="about_right_card">
-                <h2 className="about_right_card_title">4 года</h2>
+                <h2 className="about_right_card_title">2 года</h2>
                 <p className="about_right_card_text">Опыта разработки</p>
               </div>
             </div>
