@@ -13,13 +13,57 @@ const Sidebar = ({ sidebar, setSidebar, toggle }) => {
         }
       >
         <div className="sidebar_header">
-          <img clasName="sidebar_logos" src={sidebar_logo} alt="logo" />
+          <a href="/">
+            <img className="sidebar_images" src={sidebar_logo} alt="logo" />
+          </a>
           <button
             onClick={() => setSidebar(false)}
             className="sidebar_exit_btn"
           >
             <FiX className="sidebar_exit_icons" />
           </button>
+        </div>
+        <div className="sidebar_content">
+          <a
+            className={
+              toggle === true
+                ? `sidebar_router_link sidebar_tun`
+                : `sidebar_router_link sidebar_kun`
+            }
+            href="#about"
+          >
+            Biz haqimizda
+          </a>
+          <a
+            className={
+              toggle === true
+                ? `sidebar_router_link sidebar_tun`
+                : `sidebar_router_link sidebar_kun`
+            }
+            href="#portfolio"
+          >
+            Loyhalarimiz
+          </a>
+          <a
+            className={
+              toggle === true
+                ? `sidebar_router_link sidebar_tun`
+                : `sidebar_router_link sidebar_kun`
+            }
+            href="#services"
+          >
+            Bizning Kurslar
+          </a>
+          <a
+            className={
+              toggle === true
+                ? `sidebar_router_link sidebar_tun`
+                : `sidebar_router_link sidebar_kun`
+            }
+            href="#contact"
+          >
+            Kontakt
+          </a>
         </div>
       </div>
     </div>

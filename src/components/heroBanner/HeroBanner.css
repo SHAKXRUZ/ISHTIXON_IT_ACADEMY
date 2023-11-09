@@ -27,11 +27,12 @@
     max-width: 549px;
     line-height: 25px;
 }
-.hero_images{
+
+.hero_images {
     width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    border-radius: 5%;
 }
+
 @media only screen and (max-width:1200px) {
 
     .hero_content {
@@ -42,9 +43,7 @@
         font-size: 40px;
     }
 
-    .hero_images {
-        width: 400px;
-    }
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -58,7 +57,7 @@
     }
 
     .hero_images {
-        width: 350px;
+        max-width: 100%;
     }
 }
 
@@ -80,7 +79,6 @@
 
     .hero_images {
         display: none;
-        width: 350px;
     }
 }
 

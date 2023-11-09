@@ -1,5 +1,5 @@
 import "./HeroBanner.css";
-import hero_images from "../../assets/images/hero.png";
+import hero_images from "../../assets/images/hero.jpg";
 
 const HeroBanner = () => {
   return (
