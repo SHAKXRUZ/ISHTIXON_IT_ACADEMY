@@ -17,7 +17,7 @@ const Projects = () => {
               src={projects_images1}
               alt="projects_images"
             />
-            <a href="https://www.texnomart-shop.uz">
+            <a href="https://texnomart-xi.vercel.app">
               <div className="projects_images_hover">
                 <GoArrowUpRight className="projects_images_icons" />
                 <p className="projects_name">TEXNOMART clone</p>
@@ -30,7 +30,7 @@ const Projects = () => {
               src={projects_images2}
               alt="projects_images"
             />
-            <a href="https://amazon-three-beryl.vercel.app">
+            <a href="https://amazon-pi-nine.vercel.app">
               <div className="projects_images_hover">
                 <GoArrowUpRight className="projects_images_icons" />
                 <p className="projects_name">AMAZON clone</p>
